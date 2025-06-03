@@ -51,7 +51,7 @@ function draw() {
     let x = 0;
 
     for (let i = 0; i < bufferLength; i++) {
-        barHeight = (dataArray[i] / 255) * canvas.height;
+        barHeight = (dataArray[i]! / 255) * canvas.height;
 
         canvasContext.fillStyle = `rgb(${barHeight + 100}, 50, 150)`;
         canvasContext.fillRect(x, canvas.height - barHeight, barWidth, barHeight);
