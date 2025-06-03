@@ -3,6 +3,10 @@
   "module": "src/index.html",
   "type": "module",
   "private": true,
+  "scripts": {
+    "dev": "bun run .",
+    "build": "bun build ./src/index.html --outdir ./dist"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
